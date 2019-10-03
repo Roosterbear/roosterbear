@@ -17,7 +17,7 @@ Template Name: Roosterbear Design
     <title>Roosterbear</title>
 </head>
 <body>
-  <!-- Mi Sitio Web -->
+  
   <header class="fondo">
       <a href="https://roosterbear.com/blog/">
         <button id="mi_boton_blog">
