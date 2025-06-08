@@ -170,8 +170,9 @@
         margin-left: 5px;
         padding: 5px
     }
-
-    .ficha>strong{text-decoration: underline;margin-bottom:5px}
+    
+    em{text-decoration: underline}
+    .ficha>strong{margin-bottom:5px}
     
     /* ACERCA */
 
@@ -270,8 +271,7 @@
         .texto-secundario{font-weight:bold;letter-spacing:1px;margin-top:-15px}
         .caja_central{left:5%;flex-direction: row;top:20%;gap:5rem}
         section{letter-spacing:1px;padding:20px;margin-top:1.5rem}
-        .portafolios{grid-template-columns: 1fr 1fr;}
-        
+        .portafolios{grid-template-columns: 1fr 1fr}
     }
 
     @media (min-width:1000px){
@@ -279,6 +279,7 @@
         .texto-secundario{font-size:2rem;font-weight:bold;letter-spacing:1px;margin-top:-15px}
         .caja_central{left:20%;flex-direction: row;top:20%;gap:7rem}
         section{font-size: 1.5rem;letter-spacing:1px;padding:20px;margin-top:1.5rem}
+        .portafolios{grid-template-columns: 1fr 1fr 1fr}
     }
 
     
