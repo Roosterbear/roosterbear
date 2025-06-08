@@ -16,18 +16,23 @@
         }
         
         .header__menu{
-            color:#75d190;
+            font-family: "Playfair Display", serif;
             border-radius: 15px;
-            font-size:1.7rem;font-weight:300;letter-spacing:.05em;
-            padding:15px 5px;margin:1rem 0 0 0.3rem   
+            font-size:1.2rem;font-weight:300;
+            padding:3px 0;   
         }
-
-        .header__menu:hover{
-            background-color: #ffffff39;
-            border-radius: 3px;
+        .header__menu>a{
+            color:#444444;
+            background-color: #eeeeee;
+            padding:7px 12px;
+            border-radius: 5px;
+            display:inline-block;margin:10px
         }
-
-        .header__menu>a{color:#ffffff}
+        .header__menu>a:hover{
+            background-color: #11111199;
+            color:#eeeeee;
+            text-decoration: none;
+        }
 
         #mi_boton_blog{
             border:solid #fa5300 1px;font-size:1.2rem;
@@ -109,6 +114,7 @@
         figure{margin:10px;display:flex;align-items: center;gap:1rem}
         figure>img{width:50px}
         .img__testimonio{border-radius: 50%;}
+        cite>small{font-size: 0.9rem;color:#ffe9bd}
         aside cite{
             font-family:"Open Sans Condensed", sans-serif;
             font-size: 1.2rem;
