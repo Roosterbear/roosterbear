@@ -2,6 +2,33 @@
         body{font-family:"Open Sans Condensed", sans-serif;font-size:1rem;font-weight:400;line-height:1.7}
         
         /* -------------------------------------------------------------- */
+        .fondo{
+            background:-webkit-gradient(linear, left top, right top, from(rgba(68, 68, 68, 0.842)), to(rgba(158, 76, 44, 0.767))), 
+            url(https://roosterbear.com/wp-content/uploads/img/02_el_respaldo_del_profesionalismo--800.jpg);
+            background:-webkit-linear-gradient(left, rgba(68, 68, 68, 0.842), rgba(158, 76, 44, 0.767)), 
+            url(https://roosterbear.com/wp-content/uploads/img/02_el_respaldo_del_profesionalismo--800.jpg);
+            background:-o-linear-gradient(left, rgba(68, 68, 68, 0.842), rgba(158, 76, 44, 0.767)), 
+            url(https://roosterbear.com/wp-content/uploads/img/02_el_respaldo_del_profesionalismo--800.jpg);
+            background:linear-gradient(to right, rgba(68, 68, 68, 0.842), rgba(158, 76, 44, 0.767)), 
+            url(https://roosterbear.com/wp-content/uploads/img/02_el_respaldo_del_profesionalismo--800.jpg);
+            background-size:cover;background-position:top right;
+            height:100vh;
+        }
+        
+        .header__menu{
+            color:#75d190;
+            border-radius: 15px;
+            font-size:1.7rem;font-weight:300;letter-spacing:.05em;
+            padding:15px 5px;margin:1rem 0 0 0.3rem   
+        }
+
+        .header__menu:hover{
+            background-color: #ffffff39;
+            border-radius: 3px;
+        }
+
+        .header__menu>a{color:#ffffff}
+
         #mi_boton_blog{
             border:solid #fa5300 1px;font-size:1.2rem;
             padding:10px;padding-left:20px;margin:10px;
@@ -23,7 +50,8 @@
         }
 
         #mi_boton_saber_mas{
-            border:solid #ffffff 1px;font-family:'Abel', sans-serif;font-size:2rem;
+            border:solid #ffffff 1px;font-family:'Abel', sans-serif;
+            font-size:1.5rem;
             padding:15px;margin:15px;
             background-color:rgba(255, 255, 255, 0);color:#ffffff;display:block;float:right;cursor:pointer
         }
@@ -32,19 +60,6 @@
 
         #mi_boton_saber_mas:hover{text-decoration:none;background-color:rgba(255, 255, 255, 0.1)}
 
-        .fondo{
-            background:-webkit-gradient(linear, left top, right top, from(rgba(68, 68, 68, 0.842)), to(rgba(158, 76, 44, 0.767))), 
-            url(https://roosterbear.com/wp-content/uploads/img/02_el_respaldo_del_profesionalismo--800.jpg);
-            background:-webkit-linear-gradient(left, rgba(68, 68, 68, 0.842), rgba(158, 76, 44, 0.767)), 
-            url(https://roosterbear.com/wp-content/uploads/img/02_el_respaldo_del_profesionalismo--800.jpg);
-            background:-o-linear-gradient(left, rgba(68, 68, 68, 0.842), rgba(158, 76, 44, 0.767)), 
-            url(https://roosterbear.com/wp-content/uploads/img/02_el_respaldo_del_profesionalismo--800.jpg);
-            background:linear-gradient(to right, rgba(68, 68, 68, 0.842), rgba(158, 76, 44, 0.767)), 
-            url(https://roosterbear.com/wp-content/uploads/img/02_el_respaldo_del_profesionalismo--800.jpg);
-            background-size:cover;background-position:top right;
-            height:100vh;
-        }
-        
         .caja_central{
             position:absolute;
             top:10%;left:5%;
@@ -55,14 +70,14 @@
 
         .texto-principal{
             font-family:"Abel", sans-serif;color:#ffe9bd;
-            font-size:1.7rem;font-weight:bolder;
+            font-size:1.9rem;font-weight:bolder;
             letter-spacing:3px;display:block;margin:0;
             -webkit-animation-name:aLaDerecha;animation-name:aLaDerecha;-webkit-animation-duration:3s;animation-duration:3s
         }
 
         .texto-secundario{
             font-family:"Open Sans Condensed", sans-serif;color:#75d190;
-            font-size:1.3rem;font-weight:bolder;letter-spacing:2px;
+            font-size:1.5rem;font-weight:bolder;letter-spacing:2px;
             display:block;margin-top:-15px;
             text-transform: uppercase;
             -webkit-animation-name:aLaIzquierda;animation-name:aLaIzquierda;-webkit-animation-duration:4s;animation-duration:4s
@@ -76,14 +91,34 @@
             border-radius: 15px;
             color:#ffffff;
             height: fit-content;
+            display:flex;
+            flex-direction: column;
         }
         
         ul{margin-left:1rem}
         li{list-style: none}
+        hr{
+            margin:15px 0 10px 0;
+            height: 1px;
+            border: 0;
+            background: white;
+            box-shadow: 0 0.5px 0.5px rgba(0,0,0,0.1);
+        }
+
+        aside{display:flex;}
+        figure{margin:10px;display:flex;align-items: center;gap:1rem}
+        figure>img{width:50px}
+        .img__testimonio{border-radius: 50%;}
+        aside cite{
+            font-family:"Open Sans Condensed", sans-serif;
+            font-size: 1.2rem;
+            color:#ffffff;
+            margin-right:15px
+        }
 
         footer{
             background-color:rgba(69, 69, 69, 0.8);color:#ffffff;
-            font-size:1.5em;font-weight:300;letter-spacing:.09em;
+            font-size:1.5rem;font-weight:300;letter-spacing:.09em;
             padding:0 15px;position:fixed;width:100%;bottom:0
         }
         .icono{margin-top:7px;margin-left:7px;width:25px;height:25px}
@@ -102,7 +137,7 @@
         .open-blink{content:' ';position:relative;display:inline-block;width:14px;height:14px;margin:0 20px;border-radius:50%;background-color:#fa5300;-webkit-animation-name:flash;animation-name:flash;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}
         .open-blink:before{content:' ';position:absolute;top:-8px;left:-8px;display:inline-block;width:30px;height:30px;opacity:0.1;border-radius:50%;background-color:#fa5300}
 
-        @media (min-width:820px){
+        @media (min-width:800px){
             .fondo{
                 background:-webkit-gradient(linear, left top, right top, 
                 from(rgba(68, 68, 68, 0.842)), 
@@ -120,6 +155,13 @@
                 url(https://roosterbear.com/wp-content/uploads/img/01_todo_para_poner_tu_negocio_en_la_red--2000.jpg);
             }
             
+            .texto-principal{font-weight:700;letter-spacing:3px}
+            .texto-secundario{font-weight:bold;letter-spacing:1px;margin-top:-15px}
+            .caja_central{left:5%;flex-direction: row;top:20%;gap:5rem}
+            section{letter-spacing:1px;padding:20px;margin-top:1.5rem}
+        }
+
+        @media (min-width:1000px){
             .texto-principal{font-size:2.5rem;font-weight:700;letter-spacing:3px}
             .texto-secundario{font-size:2rem;font-weight:bold;letter-spacing:1px;margin-top:-15px}
             .caja_central{left:20%;flex-direction: row;top:20%;gap:7rem}
