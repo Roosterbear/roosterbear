@@ -124,16 +124,6 @@
         margin-right:15px
     }
 
-    footer{
-        background-color:rgba(69, 69, 69, 0.8);color:#ffffff;
-        font-size:1.5rem;font-weight:300;letter-spacing:.09em;
-        padding:0 15px;position:fixed;width:100%;bottom:0
-    }
-    .icono{margin-top:7px;margin-left:7px;width:25px;height:25px}
-    footer nav{float:right}
-    .footer__menu{padding:7px}
-    .footer__menu>a{color:#ffffff;text-decoration:none}
-
     /* PORTAFOLIO */
     section#portafolio{
         background-color: #ff9820;
@@ -149,10 +139,13 @@
         font-size: 3rem;
     }
 
+    .portafolios{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+
     figure.portafolio{
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        align-items:start;
+        display: flex;
         border:solid #15000033 1px;
         border-radius: 10px;
         margin: 15px
@@ -171,7 +164,10 @@
     }
 
     .ficha{
-        display:grid;
+        display:flex;
+        flex-direction: column;
+        font-size: 1rem;
+        margin-left: 5px;
         padding: 5px
     }
 
@@ -184,7 +180,8 @@
         color: #ff9820;
         font-family: "Playfair Display", serif;
         min-height: 100vh;
-        margin:0
+        padding: 5px 15px 5px 15px;
+        margin:0 
     }
     
     #acerca h1{
@@ -192,7 +189,53 @@
         font-size: 3rem;
     }
 
-    
+    figure.acerca{display: flex; gap:1rem}
+
+    .img__acerca{
+        filter: sepia(100%) brightness(0.4);
+        width:72px;
+        height: 128px
+    }
+
+    hr.en__acerca{
+        margin:10px 0 10px 0;
+        height: 1px;
+        border: 0;
+        background: #ff982033
+    }
+
+    .certificados{
+        margin-top:20px;
+        display:flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .img__certificado{width:200px;height:200px;}
+
+    .enlace__certificado{
+        background-color: #ff9820;
+        color:#150000;
+        text-decoration: none;
+        padding: 10px;
+        margin-top:15px;
+        text-align: center;
+        border-radius: 5px 
+    }
+
+    .enlace__certificado:hover{
+        text-decoration: underline;
+    }
+
+    footer{
+        background-color:rgba(69, 69, 69, 0.8);color:#ffffff;
+        font-size:1.5rem;font-weight:300;letter-spacing:.09em;
+        padding:0 15px;position:fixed;width:100%;bottom:0
+    }
+    .icono{margin-top:7px;margin-left:7px;width:25px;height:25px}
+    footer nav{float:right}
+    .footer__menu{padding:7px}
+    .footer__menu>a{color:#ffffff;text-decoration:none}
 
     @-webkit-keyframes aLaDerecha{0%{opacity:0;-webkit-transform:translateX(-70px);transform:translateX(-70px)}to{opacity:1;-webkit-transform:translate(0);transform:translate(0)}}
     @keyframes aLaDerecha{0%{opacity:0;-webkit-transform:translateX(-70px);transform:translateX(-70px)}to{opacity:1;-webkit-transform:translate(0);transform:translate(0)}}
@@ -227,6 +270,8 @@
         .texto-secundario{font-weight:bold;letter-spacing:1px;margin-top:-15px}
         .caja_central{left:5%;flex-direction: row;top:20%;gap:5rem}
         section{letter-spacing:1px;padding:20px;margin-top:1.5rem}
+        .portafolios{grid-template-columns: 1fr 1fr;}
+        
     }
 
     @media (min-width:1000px){
