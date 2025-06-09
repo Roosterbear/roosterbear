@@ -231,7 +231,7 @@
     footer{
         background-color:rgba(69, 69, 69, 0.8);color:#ffffff;
         font-size:1.5rem;font-weight:300;letter-spacing:.09em;
-        padding:0 15px;position:fixed;width:100%;bottom:0
+        padding:0 15px;position:absolute;width:100%;bottom:0
     }
     .icono{margin-top:7px;margin-left:7px;width:25px;height:25px}
     footer nav{float:right}
@@ -269,17 +269,24 @@
         
         .texto-principal{font-weight:700;letter-spacing:3px}
         .texto-secundario{font-weight:bold;letter-spacing:1px;margin-top:-15px}
-        .caja_central{left:5%;flex-direction: row;top:20%;gap:5rem}
-        section{letter-spacing:1px;padding:20px;margin-top:1.5rem}
+        .caja_central{left:9%;flex-direction: row;top:20%;gap:5rem}
+        section#servicios{letter-spacing:1px;padding:20px;margin-top:1.5rem}
         .portafolios{grid-template-columns: 1fr 1fr}
     }
 
     @media (min-width:1000px){
-        .texto-principal{font-size:2.5rem;font-weight:700;letter-spacing:3px}
+        .texto-principal{font-size:2.3rem;font-weight:700;letter-spacing:3px}
         .texto-secundario{font-size:2rem;font-weight:bold;letter-spacing:1px;margin-top:-15px}
-        .caja_central{left:20%;flex-direction: row;top:20%;gap:7rem}
-        section{font-size: 1.5rem;letter-spacing:1px;padding:20px;margin-top:1.5rem}
+        .caja_central{left:15%;flex-direction: row;top:20%;gap:7rem}
+        section#servicios{font-size: 1.5rem;letter-spacing:1px;padding:20px;margin-top:1.5rem}
         .portafolios{grid-template-columns: 1fr 1fr 1fr}
+    }
+
+    @media (min-width:1360px){
+        .texto-principal{font-size:4.9rem}
+        .texto-secundario{font-size:3.9rem}
+        .caja_central{left:15%;top:25%;gap:9.9rem}
+        section#servicios{font-size: 2rem;letter-spacing:1.2px}
     }
 
     
