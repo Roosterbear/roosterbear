@@ -42,17 +42,9 @@
         float:right;cursor:pointer
     }
         
-    #mi_boton_blog>.special{
-        font-family:'Abel', sans-serif
-    }
-
-    #mi_boton_blog>a{
-        color:#fa5300;text-decoration:none
-    }
-
-    #mi_boton_blog:hover{
-        background-color:rgba(255, 255, 255, 0.1)
-    }
+    #mi_boton_blog>.special{font-family:'Abel', sans-serif}
+    #mi_boton_blog>a{color:#fa5300;text-decoration:none}
+    #mi_boton_blog:hover{background-color:rgba(255, 255, 255, 0.1)}
 
     #mi_boton_saber_mas{
         border:solid #ffffff 1px;
@@ -64,7 +56,6 @@
     }
 
     #mi_boton_saber_mas>a{color:#fa5300;text-decoration:none}
-
     #mi_boton_saber_mas:hover{text-decoration:none;background-color:rgba(255, 255, 255, 0.1)}
 
     .caja_central{
@@ -131,18 +122,12 @@
         font-family: "Playfair Display", serif;
         min-height: 100vh;
         margin:0 0 -15px 0;
-        padding-bottom: 30px 
+        padding: 5px 15px 30px 15px 
     }
     
-    #portafolio h1{
-        text-align: center;
-        font-size: 3rem;
-    }
+    #portafolio h1{text-align: center;font-size: 3rem}
 
-    .portafolios{
-        display:grid;
-        grid-template-columns: 1fr;
-    }
+    .portafolios{display:grid;grid-template-columns: 1fr}
 
     figure.portafolio{
         display: flex;
@@ -151,10 +136,7 @@
         margin: 15px
     }
 
-    figure.portafolio>img{
-        width:150px;
-        height:300px;
-    }
+    figure.portafolio>img{width:150px;height:300px}
 
     hr.en__portafolio{
         margin:5px 0 5px 0;
@@ -173,6 +155,18 @@
     
     em{text-decoration: underline}
     .ficha>strong{margin-bottom:5px}
+
+    .regresar{
+        font-size: 1.2rem;       
+        text-decoration: none
+    }
+    .regresar:hover{text-decoration: underline}
+    .regresar__portafolio{color:#150000}
+    .flecha__portafolio{fill:#150000}
+    .regresar__acerca{color:#ff9820}
+    .flecha__acerca{fill:#ff9820}
+    .menu__flechas{display:flex;justify-content: space-between;padding:1px 5px}
+
     
     /* ACERCA */
 
@@ -185,10 +179,7 @@
         margin:0 
     }
     
-    #acerca h1{
-        text-align: center;
-        font-size: 3rem;
-    }
+    #acerca h1{text-align: center;font-size: 3rem}
 
     figure.acerca{display: flex; gap:1rem}
 
@@ -224,16 +215,15 @@
         border-radius: 5px 
     }
 
-    .enlace__certificado:hover{
-        text-decoration: underline;
-    }
+    .enlace__certificado:hover{text-decoration: underline}
 
     footer{
         background-color:rgba(69, 69, 69, 0.8);color:#ffffff;
         font-size:1.5rem;font-weight:300;letter-spacing:.09em;
-        padding:0 15px;position:absolute;width:100%;bottom:0
+        padding:0 9px;position:absolute;width:100vw;bottom:0
     }
-    .icono{margin-top:7px;margin-left:7px;width:25px;height:25px}
+
+    .icono__youtube{margin-top:7px;margin-left:7px;width:25px;height:25px}
     footer nav{float:right}
     .footer__menu{padding:7px}
     .footer__menu>a{color:#ffffff;text-decoration:none}
@@ -279,14 +269,14 @@
         .texto-secundario{font-size:2rem;font-weight:bold;letter-spacing:1px;margin-top:-15px}
         .caja_central{left:15%;flex-direction: row;top:20%;gap:7rem}
         section#servicios{font-size: 1.5rem;letter-spacing:1px;padding:20px;margin-top:1.5rem}
-        .portafolios{grid-template-columns: 1fr 1fr 1fr}
     }
-
+    
     @media (min-width:1360px){
         .texto-principal{font-size:4.9rem}
         .texto-secundario{font-size:3.9rem}
         .caja_central{left:15%;top:25%;gap:9.9rem}
         section#servicios{font-size: 2rem;letter-spacing:1.2px}
+        .portafolios{grid-template-columns: 1fr 1fr 1fr}
     }
 
     
