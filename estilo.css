@@ -134,7 +134,8 @@
         border:solid #15000033 1px;
         border-radius: 10px;
         gap:0.7rem;
-        margin: 15px
+        margin: 15px;
+        padding: 3px 3px 25px 3px
     }
 
     figure.portafolio>img{width:150px;height:300px}
@@ -151,10 +152,10 @@
         flex-direction: column;
         font-size: 1.2rem;
         margin-left: 5px;
-        padding: 5px
+        padding: 5px 
     }
     
-    .img__ficha{padding:9px;width:300px;height:600px;}
+    .img__ficha{padding:9px;width:300px;height:900px;}
     .ficha>strong{font-family: "Open Sans Condensed", sans-serif;font-size: 1.2em;letter-spacing:1px;margin-bottom:5px}
     em{text-decoration: underline}
     small{font-family: 'Abel', sans-serif;}
@@ -174,27 +175,28 @@
     section#acerca{
         background-color: #150000;
         color: #ff9820;
-        font-family: "Playfair Display", serif;
+        font-family: "Open Sans Condensed", sans-serif;
+        font-size: 1.5rem;
         min-height: 100vh;
-        padding: 5px 15px 5px 15px;
-        margin:0 
+        padding: 5px 10px 5px 10px;
+        margin:0 auto
     }
     
-    #acerca h1{text-align: center;font-size: 3rem}
+    #acerca h1{font-family:"Playfair Display", serif;text-align: center;font-size: 3rem}
 
-    figure.acerca{display: flex; gap:1rem}
+    figure.acerca{display: flex; gap:3rem;margin:0 20px}
+    .acerca__concepto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:15px 0 25px 0
+    }
+    .png{width:70px;height:70px;display:block;margin:0 auto;padding:5px}
 
     .img__acerca{
         filter: sepia(100%) brightness(0.4);
         width:72px;
         height: 128px
-    }
-
-    hr.en__acerca{
-        margin:10px 0 10px 0;
-        height: 1px;
-        border: 0;
-        background: #ff982033
     }
 
     .certificados{
