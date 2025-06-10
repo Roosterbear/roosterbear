@@ -133,6 +133,7 @@
         display: flex;
         border:solid #15000033 1px;
         border-radius: 10px;
+        gap:0.7rem;
         margin: 15px
     }
 
@@ -148,27 +149,25 @@
     .ficha{
         display:flex;
         flex-direction: column;
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-left: 5px;
         padding: 5px
     }
     
-    .ficha>strong{font-family: "Open Sans Condensed", sans-serif;font-size: 1.5rem;letter-spacing:1px;}
+    .img__ficha{padding:9px}
+    .ficha>strong{font-family: "Open Sans Condensed", sans-serif;font-size: 1.2em;letter-spacing:1px;margin-bottom:5px}
     em{text-decoration: underline}
     small{font-family: 'Abel', sans-serif;}
-    .ficha>strong{margin-bottom:5px}
 
-    .regresar{
-        font-size: 1.2rem;       
-        text-decoration: none
-    }
+    .regresar{font-size: 1.2rem;text-decoration: none}
     .regresar:hover{text-decoration: underline}
     .regresar__portafolio{color:#150000}
     .flecha__portafolio{fill:#150000}
     .regresar__acerca{color:#ff9820}
     .flecha__acerca{fill:#ff9820}
     .menu__flechas{display:flex;justify-content: space-between;padding:1px 5px}
-
+    .visitar__sitio{display:block;font-size: 0.9rem;color:#150000}
+    
     
     /* ACERCA */
 
@@ -264,13 +263,16 @@
         .caja_central{left:9%;flex-direction: row;top:20%;gap:5rem}
         section#servicios{letter-spacing:1px;padding:20px;margin-top:1.5rem}
         .portafolios{grid-template-columns: 1fr 1fr}
+        .ficha>strong{font-size: 1.3em}
+        .ficha{font-size: 1.2rem}
     }
-
+    
     @media (min-width:1000px){
         .texto-principal{font-size:2.3rem;font-weight:700;letter-spacing:3px}
         .texto-secundario{font-size:2rem;font-weight:bold;letter-spacing:1px;margin-top:-15px}
         .caja_central{left:15%;flex-direction: row;top:20%;gap:7rem}
         section#servicios{font-size: 1.5rem;letter-spacing:1px;padding:20px;margin-top:1.5rem}
+        .ficha>strong{font-size: 1.4em}
     }
     
     @media (min-width:1360px){
@@ -279,6 +281,8 @@
         .caja_central{left:15%;top:25%;gap:9.9rem}
         section#servicios{font-size: 2rem;letter-spacing:1.2px}
         .portafolios{grid-template-columns: 1fr 1fr 1fr}
+        .ficha>strong{font-size: 1.5em}
+        
     }
 
     
