@@ -183,15 +183,34 @@
     }
     
     #acerca h1{text-align: center;font-size: 3rem}
+    .acerca__container{font-family: "Open Sans Condensed", sans-serif}
+    .bio{
+        display:flex;
+        align-items: center;
+        gap:1rem;
+        font-size: 1.2rem;
+        border: 1px solid #ff9820;
+        border-radius: 5px;
+        margin:3px 10px;
+        padding: 3px
+    }
 
-    figure.acerca{display:flex; gap:3rem;margin: 20px}
+    .bio>p{padding:10px}
+
+    figure.acerca{
+        margin-top:35px;
+        display:flex;
+        justify-content: center;
+        flex-direction: column; 
+        gap:3rem;
+    }
     .acerca__concepto{
         display: flex;
         flex-direction: column;
         align-items: center;
         padding:15px 0 25px 0
     }
-    .png{width:70px;height:70px;display:block;margin:0 auto;padding:5px}
+    .png{width:150px;height:150px;display:block;margin:0 auto;padding:5px}
 
     .img__acerca{
         filter: sepia(100%) brightness(0.4);
@@ -266,7 +285,10 @@
         section#servicios{letter-spacing:1px;padding:20px;margin-top:1.5rem}
         .portafolios{grid-template-columns: 1fr 1fr}
         .ficha>strong{font-size: 1.3em}
-        .ficha{font-size: 1.2rem}
+        .ficha{font-size: 1.5rem}
+        .img__acerca{width:144px;height: 256px}
+        .bio{margin:5px 30px;font-size: 1.7rem}
+        figure.acerca{flex-direction: row}
     }
     
     @media (min-width:1000px){
@@ -275,6 +297,9 @@
         .caja_central{left:15%;flex-direction: row;top:20%;gap:7rem}
         section#servicios{font-size: 1.5rem;letter-spacing:1px;padding:20px;margin-top:1.5rem}
         .ficha>strong{font-size: 1.4em}
+        .bio{margin:7px 70px;font-size: 2rem}
+        .bio>p{padding:30px}
+        .acerca__concepto{padding:35px}
     }
     
     @media (min-width:1440px){
@@ -284,6 +309,8 @@
         section#servicios{font-size: 2rem;letter-spacing:1.2px}
         .portafolios{grid-template-columns: 1fr 1fr 1fr}
         .ficha>strong{font-size: 1.5em}
+        .bio{margin:10px 100px;font-size: 2.5rem}
+        .img__acerca{width:180px;height: 320px}
         
     }
 
