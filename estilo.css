@@ -121,7 +121,7 @@
         color:#150000;
         font-family: "Playfair Display", serif;
         min-height: 100vh;
-        margin:0 0 -15px 0;
+        margin:0;
         padding: 5px 15px 30px 15px 
     }
     
@@ -175,16 +175,16 @@
     section#acerca{
         background-color: #150000;
         color: #ff9820;
-        font-family: "Open Sans Condensed", sans-serif;
+        font-family:"Playfair Display", serif;
         font-size: 1.5rem;
         min-height: 100vh;
         padding: 5px 10px 5px 10px;
         margin:0 auto
     }
     
-    #acerca h1{font-family:"Playfair Display", serif;text-align: center;font-size: 3rem}
+    #acerca h1{text-align: center;font-size: 3rem}
 
-    figure.acerca{display: flex; gap:3rem;margin:0 20px}
+    figure.acerca{display:flex; gap:3rem;margin: 20px}
     .acerca__concepto{
         display: flex;
         flex-direction: column;
@@ -277,7 +277,7 @@
         .ficha>strong{font-size: 1.4em}
     }
     
-    @media (min-width:1360px){
+    @media (min-width:1440px){
         .texto-principal{font-size:4.9rem}
         .texto-secundario{font-size:3.9rem}
         .caja_central{left:15%;top:25%;gap:9.9rem}
