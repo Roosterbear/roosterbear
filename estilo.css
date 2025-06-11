@@ -186,6 +186,7 @@
     .acerca__container{font-family: "Open Sans Condensed", sans-serif}
     .bio{
         display:flex;
+        flex-direction: column;
         align-items: center;
         gap:1rem;
         font-size: 1.2rem;
@@ -213,9 +214,8 @@
     .png{width:150px;height:150px;display:block;margin:0 auto;padding:5px}
 
     .img__acerca{
-        filter: sepia(100%) brightness(0.4);
-        width:72px;
-        height: 128px
+        filter: sepia(100%) brightness(0.4);padding-top:5px;
+        width:144px;height: 256px
     }
 
     .certificados{
@@ -261,7 +261,11 @@
     .open-blink{content:' ';position:relative;display:inline-block;width:14px;height:14px;margin:0 20px;border-radius:50%;background-color:#fa5300;-webkit-animation-name:flash;animation-name:flash;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}
     .open-blink:before{content:' ';position:absolute;top:-8px;left:-8px;display:inline-block;width:30px;height:30px;opacity:0.1;border-radius:50%;background-color:#fa5300}
 
-    @media (min-width:800px){
+    @media (min-width:400px){
+        .bio{flex-direction: row}
+    }
+
+    @media (min-width:769px){
         .fondo{
             background:-webkit-gradient(linear, left top, right top, 
             from(rgba(68, 68, 68, 0.842)), 
@@ -279,14 +283,11 @@
             url(https://roosterbear.com/wp-content/uploads/img/01_todo_para_poner_tu_negocio_en_la_red--2000.jpg);
         }
         
-        .texto-principal{font-weight:700;letter-spacing:3px}
-        .texto-secundario{font-weight:bold;letter-spacing:1px;margin-top:-15px}
-        .caja_central{left:9%;flex-direction: row;top:20%;gap:5rem}
+        
+        .caja_central{flex-direction: row;gap:5rem}
         section#servicios{letter-spacing:1px;padding:20px;margin-top:1.5rem}
-        .portafolios{grid-template-columns: 1fr 1fr}
         .ficha>strong{font-size: 1.3em}
         .ficha{font-size: 1.5rem}
-        .img__acerca{width:144px;height: 256px}
         .bio{margin:5px 30px;font-size: 1.7rem}
         figure.acerca{flex-direction: row}
     }
@@ -294,8 +295,9 @@
     @media (min-width:1000px){
         .texto-principal{font-size:2.3rem;font-weight:700;letter-spacing:3px}
         .texto-secundario{font-size:2rem;font-weight:bold;letter-spacing:1px;margin-top:-15px}
-        .caja_central{left:15%;flex-direction: row;top:20%;gap:7rem}
+        .caja_central{left:18%;flex-direction: row;top:21%;gap:7rem}
         section#servicios{font-size: 1.5rem;letter-spacing:1px;padding:20px;margin-top:1.5rem}
+        .portafolios{grid-template-columns: 1fr 1fr}
         .ficha>strong{font-size: 1.4em}
         .bio{margin:7px 70px;font-size: 2rem}
         .bio>p{padding:30px}
@@ -310,8 +312,6 @@
         .portafolios{grid-template-columns: 1fr 1fr 1fr}
         .ficha>strong{font-size: 1.5em}
         .bio{margin:10px 100px;font-size: 2.5rem}
-        .img__acerca{width:180px;height: 320px}
-        
     }
 
     
