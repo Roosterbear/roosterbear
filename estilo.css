@@ -60,10 +60,11 @@
 
     .caja_central{
         position:absolute;
-        top:12%;left:5%;
+        top:15%;left:15%;
         display: flex;
         flex-direction: column;
         gap: 0.3rem;
+        overflow: hidden
     }
 
     .texto-principal{
@@ -113,6 +114,28 @@
         font-size: 1.2rem;
         color:#ffffff;
         margin-right:15px
+    }
+
+    .nav__acerca{position:absolute;bottom:0;right:0}
+    .acerca__menu{
+        font-family: "Abel", sans-serif;
+        border-radius: 15px;
+        font-size:1.7rem;
+        padding:5px;   
+        letter-spacing: 2px;
+    }
+
+    .acerca__menu>a{
+        color:#444444;background-color: #ffe9bd;
+        padding:3px 20px;margin:12px;
+        border-radius: 5px;text-decoration: none;
+        display:inline-block;
+    }
+    .acerca__menu>a:hover, .acerca__menu>a:active{
+        background-color: #150000;
+        color:#ffe9bd;
+        text-decoration: underline;
+        transition: all 0.7s ease
     }
 
     /* PORTAFOLIO */
@@ -223,7 +246,7 @@
     .png{width:150px;height:150px;display:block;margin:0 auto;padding:5px}
     .smalling:hover, .smalling:active{
         transform: scale(0.9);
-        transition: all 0.3s ease;
+        transition: transform 0.3s ease;
     }
 
     .img__acerca{
@@ -249,10 +272,8 @@
         text-align: center;
         border-radius: 5px 
     }
-
     .enlace__certificado:hover{text-decoration: underline}
-    .nav__acerca{position:absolute}
-    .footer__acerca{position:fixed;bottom:0}
+    
     footer{
         background-color:rgba(69, 69, 69, 0.9);color:#ffffff;
         font-size:1.5rem;font-weight:300;letter-spacing:.09em;
@@ -298,7 +319,7 @@
         }
         
         
-        .caja_central{flex-direction: row;gap:5rem}
+        .caja_central{flex-direction: row;left:7%;gap:5rem}
         section#servicios{letter-spacing:1px;padding:20px;margin-top:1.5rem}
         .ficha>strong{font-size: 1.3em}
         .ficha{font-size: 1.5rem}
@@ -308,7 +329,7 @@
     @media (min-width:1000px){
         .texto-principal{font-size:2.3rem;font-weight:700;letter-spacing:3px}
         .texto-secundario{font-size:2rem;font-weight:bold;letter-spacing:1px}
-        .caja_central{left:20%;top:25%;;gap:6rem}
+        .caja_central{left:20%;top:25%;gap:6rem}
         section#servicios{font-size: 1.5rem;letter-spacing:1px;padding:20px;margin-top:1.5rem}
         .portafolios{grid-template-columns: 1fr 1fr}
         .ficha>strong{font-size: 1.4em}
