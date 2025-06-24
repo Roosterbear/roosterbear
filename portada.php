@@ -366,6 +366,25 @@ Template Name: Roosterbear Design
         footer{width:99vw}
     }
 
+    @media (min-width:2000px){
+        .fondo{
+            background:-webkit-gradient(linear, left top, right top, 
+            from(rgba(68, 68, 68, 0.842)), 
+            to(rgba(158, 76, 44, 0.767))), 
+            url(https://roosterbear.com/wp-content/uploads/img/03_todo_para_poner_tu_negocio_en_la_red--3000.jpg);
+            background:-webkit-linear-gradient(left, rgba(68, 68, 68, 0.842), 
+            rgba(158, 76, 44, 0.767)), 
+            url(https://roosterbear.com/wp-content/uploads/img/03_todo_para_poner_tu_negocio_en_la_red--3000.jpg);
+            background:-o-linear-gradient(left, rgba(68, 68, 68, 0.842), 
+            rgba(158, 76, 44, 0.767)), 
+            url(https://roosterbear.com/wp-content/uploads/img/03_todo_para_poner_tu_negocio_en_la_red--3000.jpg);
+            background:linear-gradient(to right, 
+            rgba(68, 68, 68, 0.842), 
+            rgba(158, 76, 44, 0.767)), 
+            url(https://roosterbear.com/wp-content/uploads/img/03_todo_para_poner_tu_negocio_en_la_red--3000.jpg);
+        }
+    }
+
     
     </style>
   <title>Roosterbear</title>
