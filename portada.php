@@ -31,7 +31,7 @@ Template Name: Roosterbear Design
         url(https://roosterbear.com/wp-content/uploads/img/02_el_respaldo_del_profesionalismo--800.jpg);
         background:linear-gradient(to right, rgba(68, 68, 68, 0.842), rgba(158, 76, 44, 0.767)), 
         url(https://roosterbear.com/wp-content/uploads/img/02_el_respaldo_del_profesionalismo--800.jpg);
-        background-size:cover;background-position:top right;
+        background-size:cover;background-position:top right;background-repeat: no-repeat;
         height:100vh
     }
 
