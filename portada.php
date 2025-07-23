@@ -493,6 +493,25 @@ Template Name: Roosterbear Design
         </figure>
 
         <figure class="portafolio">
+          <img src="https://roosterbear.com/wp-content/uploads/img/cib.jpg" 
+          alt="Biblioteca" class="img__ficha bigging" loading="lazy">
+          <div class="ficha">
+            <strong>Biblioteca</strong>
+            <hr class="en__portafolio"/>
+            <em>Descripci&oacute;n: </em>
+            <small>
+              Proyecto creado para la Universidad Tecnológica de Aguascalientes 
+              para <strong>Sistema de Biblioteca</strong>.
+              <br/>Usado por más de <strong style="color:#04559c">1,000 alumnos</strong>.<br/>
+              Realizado en <strong>PHP</strong> con el Framework <strong>Codeigniter</strong>.
+              <br/><br/>
+              Se usó HTML, CSS, <strong>Boostrap</strong>, Javascript y <strong>JQuery</strong>.
+              <br/><br/>Status: <span style="color:#333333">Privada</span>
+            </small>
+          </div>
+        </figure>
+
+        <figure class="portafolio">
           <img src="https://roosterbear.com/wp-content/uploads/img/reinscripcion.jpg" 
           alt="Reinscripcion" class="img__ficha bigging" loading="lazy">
           <div class="ficha">
